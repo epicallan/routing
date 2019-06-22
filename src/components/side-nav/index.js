@@ -36,7 +36,7 @@ class SideNav extends React.Component {
       const activeHash = activeIds[0];
       // console.log("activeHasevent.target.dataset.valueh", activeHash);
       const anchors = this.state.anchors.map(obj => {  
-       return obj.hash === activeHash ? { ...obj, isActive: true } : {...obj, isActive: false}
+       return {...obj, isActive: false}
       })
       this.setState({ anchors })
     }
